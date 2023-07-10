@@ -1,0 +1,124 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %} Godwin {% endblock %} 
+<style>
+    .bg-1 {
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+    }
+    .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+    }
+    #contacts {
+      background-color: #ffffff; /* White */
+      color: #555555;
+    }
+
+    </style>
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle"
+data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">Portfolio</a>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="/">Home</a></li>
+<li><a href="/">About</a></li>
+<li><a href="/">Projects</a></li>
+</ul>
+</div>
+</div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container bg-dark" >
+        <div class="page-header text-center bg-1">
+                <img class="img-circle" style="width: 200px; height: 200px;" alt="my image" src="{{ url_for('static', filename='images/alan.png') }}" >
+             
+                <h1>Godwin Agaba</h1>
+    </div>
+
+</div>
+<!-- Second Container -->
+<div class="container text-center">
+    <h3 class="margin">What Am I?</h3>
+<p>
+    I am a computer scientist who graduated from Mbarara University of Science and Technology.
+     My programming skills encompass Python, Java, and JavaScript, and I have a strong command of Flask, Bootstrap, and Android application development. In addition to my programming expertise, I am also adept at creating graphics.
+      With a passion for technology and a keen eye for design, I strive to create innovative and visually appealing solutions.
+     I am dedicated to continuous learning and staying updated with the latest advancements in the field of computer science.</p>
+
+</div>
+<div class="container bg-warning">
+    <h1 class="text-center">Projects</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Item 1</h5>
+                    <p class="card-text">Description of item 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Item 2</h5>
+                    <p class="card-text">Description of item 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Item 3</h5>
+                    <p class="card-text">Description of item 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container "  style="background-color: #1b1a1a; color: #ffffff;">
+    <h1 class="text-center">Contacts</h1>
+
+    <div class="row bg-dark">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fair Tales</h5>
+                    <p class="card-text">Description of item 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Personal Financial Assistant</h5>
+                    <p class="card-text">Description of item 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Item 3</h5>
+                    <p class="card-text">Description of item 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  {% endblock %}
+
